@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postman - Documentation Generator <span>by <a>GJZ26</a></span></title>
+    <link rel="stylesheet" href="../public/css/main_page_style.css">
+    <!-- <link rel="stylesheet" href="./dist/god_style.css"> -->
+</head>
+
+<body>
+    <header>
+        <p>Postman</p>
+        <h1>Documentation Generator</h1>
+    </header>
+    <main>
+        <div class="segment">
+            <h2>
+                Drop your .json file of your collection here
+            </h2>
+            <p>
+                Release your archive of your collection that you wish to document here... I will automatically generate
+                the
+                documents and little else for you...
+            </p>
+
+            <div class="file-drop" id="collection-file">
+                <h1>Drag!</h1>
+                <p>Your .json file here</p>
+                <input accept=".json" type="file">
+            </div>
+        </div>
+        <hr>
+        <div class="segment" style="display: none;">
+            <h3>
+                Are you using global variables?
+            </h3>
+            <p>
+                Export your variables and throw them here, don't worry, we won't read anything else that is not being
+                used
+                in the collection you have sent:)
+            </p>
+
+            <div class="file-drop" id="global-var-file">
+                <h1>Drag!</h1>
+                <p>Your .json file here</p>
+                <input accept=".json" type="file">
+            </div>
+        </div>
+
+        <div id="main">
+            <button id="sender">Let's Do It!</button>
+        </div>
+
+    </main>
+    <footer>
+        <p>Version 1.0.0</p>
+        <p>Under MIT License</p>
+        <p>Author GJZ26</p>
+    </footer>
+</body>
+<script src="../public/js/classes_manager.js"></script>
+<script src="../public/js/request_manager.js"></script>
+
+<!-- <script src="./dist/god_script.js"></script> -->
+
+</html>
