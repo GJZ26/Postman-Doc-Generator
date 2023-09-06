@@ -16,7 +16,7 @@ export class CollectionReader {
 
     constructor(debug = false) {
         this.debug = debug
-        this.cssMinified = fs.readFileSync(process.cwd() + '/src/public/dist/light_theme_doc-min.css').toString();
+        this.cssMinified = fs.readFileSync(process.cwd() + '/src/public/dist/documentation_light.css').toString();
     }
 
     read(path) {
@@ -390,9 +390,3 @@ export class CollectionReader {
         return result;
     }
 }
-
-const a = new CollectionReader(true)
-const raw = a.read('Researcher.postman_collection5.json')
-a.analize(raw)
-
-a.saveHTML()

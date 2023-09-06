@@ -22,5 +22,5 @@ app.post("/test",(req,res)=>{
 })
 
 app.listen(3000, () => {
-    console.log("App listen on port 3000")
+    console.log("http://127.0.0.1:3000/")
 })
